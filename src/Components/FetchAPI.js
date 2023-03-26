@@ -17,7 +17,7 @@ const FetchAPI = (props) => {
         const fetchInfo = async () => {
             try{
                 console.log("URL :: ", url);
-                const response = await fetch ("https://randomuser.me/api/?results=10");
+                const response = await fetch ("https://randomuser.me/api/?results=100");
                 const data = await response.json();
                 console.log("Response Data:: ", data.results);
                 setData(data.results);
